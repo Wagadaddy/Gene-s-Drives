@@ -18,17 +18,20 @@ img {
   }
 }
 
-/* ========= COLORS ========= */
+/* ============================== */
+/* NAVY + WHITE + GREY THEME      */
+/* ============================== */
+
 :root {
   --navy: #0a1a33;
   --navy-light: #123a63;
-  --grey-light: #f2f2f5;
   --white: #ffffff;
+  --grey-light: #f2f2f5;
   --text-dark: #2a2a2a;
   --text-grey: #6b6b6b;
 }
 
-/* ========= BODY & PAGE ========= */
+/* ===== BODY ===== */
 body {
   background-color: var(--grey-light);
   color: var(--text-dark);
@@ -37,13 +40,13 @@ body {
   padding: 0;
 }
 
-/* ========= HEADINGS ========= */
+/* ===== HEADINGS ===== */
 h1, h2, h3, h4 {
   color: var(--navy);
   margin-top: 0;
 }
 
-/* ========= LINKS ========= */
+/* ===== LINKS ===== */
 a {
   color: var(--navy-light);
   text-decoration: none;
@@ -52,35 +55,85 @@ a:hover {
   color: var(--navy);
 }
 
-/* ========= CONTAINERS / SECTIONS ========= */
-.section, .feature, .card, main {
-  background-color: var(--white);
-  color: var(--text-dark);
-  padding: 1rem;
-  margin: 1rem auto;
-  max-width: 900px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-/* ========= NAVBAR ========= */
+/* ===== NAVBAR ===== */
 nav, .navbar {
   background-color: var(--navy);
   color: var(--white);
-  padding: 1rem;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 nav a, .navbar a {
   color: white;
-  margin-right: 1rem;
+  margin-left: 1rem;
 }
 nav a:hover, .navbar a:hover {
   color: var(--navy-light);
 }
 
-/* ========= FOOTER ========= */
+/* ===== HERO / MAIN SECTION ===== */
+.hero {
+  background-color: var(--navy);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 2.5rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+}
+
+/* ===== FEATURE CARDS ===== */
+.section, .feature, .card {
+  background-color: var(--white);
+  color: var(--text-dark);
+  padding: 1.5rem;
+  margin: 1.5rem auto;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* ===== FOOTER ===== */
 footer {
   background-color: var(--navy);
   color: white;
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem 2rem;
 }
+
+/* ===== BUTTONS ===== */
+button, .btn {
+  background-color: var(--navy);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.7rem 1.2rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+button:hover, .btn:hover {
+  background-color: var(--navy-light);
+}
+
+/* ===== RESPONSIVE ADJUSTMENTS ===== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav a {
+    margin: 0.5rem 0;
+  }
+}
+

@@ -18,14 +18,21 @@ img {
   }
 }
 
+/* HERO IMAGE FIX */
+.hero {
+  position: relative;
+  text-align: center;
+  overflow: hidden;       /* ensures image doesn’t overflow */
+}
+
 .hero img {
-  width: 100%;        /* makes the image span the container width */
-  max-width: 1200px;  /* optional: prevents it from becoming too wide on large screens */
-  height: auto;       /* keeps aspect ratio */
-  display: block;     /* removes extra space below image */
-  margin: 0 auto;     /* centers the image */
-  object-fit: cover;  /* ensures image covers container without stretching */
-  border-radius: 10px; /* optional: rounded corners */
+  width: 100%;
+  height: 400px;          /* fixed height for hero */
+  object-fit: cover;      /* crop/scale image to cover container */
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border-radius: 10px;
 }
 
 /* Navbar */

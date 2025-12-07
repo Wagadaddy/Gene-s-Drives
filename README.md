@@ -142,7 +142,7 @@ HERO SECTION (py-5, bg-light)
 MAIN CONTENT (#features)
   SECTION 1 (row mb-5)
     LEFT COLUMN (col-md-6)
-      ▸ Image: WhatsApp Image 2025-12-07 at 15.07.43_3305cef2.jpg
+      ▸ Image
     RIGHT COLUMN (col-md-6)
       ▸ H3: "How Gene Drives Work"
       ▸ Paragraph: "Turning inheritance on its head"
@@ -150,14 +150,14 @@ MAIN CONTENT (#features)
 
   SECTION 2 (row mb-5, image/text reversed)
     LEFT COLUMN (col-md-6 order-md-2)
-      ▸ Image: WhatsApp Image 2025-12-07 at 15.07.43_defdc168.jpg
+      ▸ Image
     RIGHT COLUMN (col-md-6 order-md-1)
       ▸ H3: "Why It Matters for Medicine & Public Health"
       ▸ Paragraph explaining vector-borne disease control
 
   SECTION 3 (row mb-5)
     LEFT COLUMN (col-md-6)
-      ▸ Image: IMG-20251207-WA0005.jpg
+      ▸ Image
     RIGHT COLUMN (col-md-6)
       ▸ H3: "A New Frontier"
       ▸ Paragraph: concluding invitation to explore About page
@@ -210,7 +210,7 @@ PAGE TITLE & SUBTITLE
   ▸ H1: "Contact & Newsletter"
   ▸ Lead: "Sign up for the newsletter to get updates, or send us a message."
 
-FORM SECTION (centered, col-md-8)
+FORM SECTION 
   ▸ Alert placeholder (for form feedback)
   ▸ Form:
       ▸ Input: Name (optional)

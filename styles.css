@@ -33,7 +33,7 @@ header .col-md-5 img {
 
 /* Navbar */
 .navbar, .navbar-light, .navbar-dark {
-  background-color: #0a1a33 !important;
+  background-color: #123a63 !important;
   color: #ffffff !important;
 }
 
@@ -52,13 +52,13 @@ header .col-md-5 img {
 
 /* Buttons */
 .btn-primary {
-  background-color: #0a1a33 !important;
-  border-color: #0a1a33 !important;
+  background-color: #123a63 !important;
+  border-color: #123a63 !important;
   color: #ffffff !important;
 }
 .btn-primary:hover {
-  background-color: #123a63 !important;
-  border-color: #123a63 !important;
+  background-color: #0a1a33 !important;
+  border-color: #0a1a33 !important;
 }
 
 /* Body */

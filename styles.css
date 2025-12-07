@@ -18,22 +18,17 @@ img {
   }
 }
 
-/* HERO IMAGE FIX FOR BOOTSTRAP GRID */
+/* HERO IMAGE FIX FOR BOOTSTRAP GRID - FORCE SIZE */
 header .col-md-5 img {
-  max-height: 400px;   /* limits vertical size */
-  width: auto;         /* keeps aspect ratio */
-  max-width: 100%;     /* stays inside column */
-  object-fit: cover;   /* crops image if too tall */
-  border-radius: 10px; /* optional rounded corners */
-  display: block;
-  margin: 0 auto;      /* centers image in column */
-}
-
-/* Responsive adjustment */
-@media (max-width: 768px) {
-  header .col-md-5 img {
-    max-height: 250px; /* reduce height on smaller screens */
-  }
+  max-height: 400px !important;   /* limit vertical size */
+  min-height: 200px !important;   /* optional: prevent it from shrinking too much */
+  width: auto !important;         /* preserve aspect ratio */
+  max-width: 100% !important;     /* stay inside column */
+  height: auto !important;        /* ensure responsive scaling */
+  object-fit: cover !important;   /* scale and crop to fill container */
+  border-radius: 10px !important; 
+  display: block !important;
+  margin: 0 auto !important;      /* center inside column */
 }
 
 /* Navbar */

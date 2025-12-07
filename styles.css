@@ -66,3 +66,13 @@ body {
   background-color: #f2f2f5 !important;
   color: #2a2a2a !important;
 }
+
+/* Ensure all content images preserve aspect ratio */
+.content img, .about img, img {
+  max-width: 100%;       /* never exceed container width */
+  height: auto;          /* preserve aspect ratio */
+  display: block;
+  margin: 0 auto;        /* center the image */
+  object-fit: contain;   /* fit inside container without cropping */
+  border-radius: 10px;   /* optional, match your header style */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08); /* optional, match existing style */

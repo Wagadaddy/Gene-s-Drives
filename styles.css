@@ -17,3 +17,86 @@ img {
     margin-top: 1rem;
   }
 }
+
+/* ============================ */
+/* NAVY + WHITE + GREY THEME    */
+/* ============================ */
+
+:root {
+  --primary: #0a1a33;         /* deep navy */
+  --primary-light: #123a63;   /* lighter navy */
+  --background: #f2f2f5;      /* light grey for page background */
+  --card-bg: #ffffff;         /* white for cards or content blocks */
+  --text-dark: #2a2a2a;       /* dark grey for main text */
+  --text-light: #6b6b6b;      /* medium grey for secondary text */
+}
+
+/* Page background & global text colour */
+body {
+  background-color: var(--background);
+  color: var(--text-dark);
+  margin: 0;
+  padding: 0;
+}
+
+/* Links */
+a {
+  color: var(--primary-light);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--primary);
+}
+
+/* Headers and main titles */
+h1, h2, h3, h4 {
+  color: var(--primary);
+}
+
+/* Hero / Main section background if any — optional */
+/* For example, if your hero is wrapped in a .hero class */
+// .hero {
+//   background-color: var(--primary);
+//   color: white;
+// }
+
+/* Any card, feature-box or section container */
+.section, .feature, .card, .container {
+  background-color: var(--card-bg);
+  border: none;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Navigation bar / menu bar (if you have a nav) */
+nav, .navbar, .menu {
+  background-color: var(--primary);
+  color: white;
+}
+nav a, .navbar a, .menu a {
+  color: white;
+}
+nav a:hover, .navbar a:hover, .menu a:hover {
+  color: var(--primary-light);
+}
+
+/* Footer (if present) */
+footer {
+  background-color: var(--primary);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Images (if any overlay or background) — optional adjustments */
+/* Remove border / background around images */
+img {
+  background: none;
+  border: none;
+}
+
+/* Ensure page width content area contrasts */
+main, .content {
+  background-color: var(--card-bg);
+  color: var(--text-dark);
+}

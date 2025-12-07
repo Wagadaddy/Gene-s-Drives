@@ -1,5 +1,4 @@
 <<<<<<< HEAD
-# Gene-s-Drives
 =======
 # Gene's Drives - Front Page (Bootstrap)
 

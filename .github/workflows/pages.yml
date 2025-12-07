@@ -1,5 +1,4 @@
 name: Deploy To Github Pages
-
 on:
   push:
     branches: ["main"]
@@ -28,7 +27,8 @@ jobs:
         run: |
           rm -rf dist
           mkdir dist
-          cp -r * dist/
+          shopt -s extglob
+          cp -r !(dist) dist/
           rm -rf dist/.git dist/.github
 
       - name: Upload artifact

@@ -18,21 +18,22 @@ img {
   }
 }
 
-/* HERO IMAGE FIX */
-.hero {
-  position: relative;
-  text-align: center;
-  overflow: hidden;       /* ensures image doesn’t overflow */
+/* HERO IMAGE FIX FOR BOOTSTRAP GRID */
+header .col-md-5 img {
+  max-height: 400px;   /* limits vertical size */
+  width: auto;         /* keeps aspect ratio */
+  max-width: 100%;     /* stays inside column */
+  object-fit: cover;   /* crops image if too tall */
+  border-radius: 10px; /* optional rounded corners */
+  display: block;
+  margin: 0 auto;      /* centers image in column */
 }
 
-.hero img {
-  width: 100%;
-  height: 400px;          /* fixed height for hero */
-  object-fit: cover;      /* crop/scale image to cover container */
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  border-radius: 10px;
+/* Responsive adjustment */
+@media (max-width: 768px) {
+  header .col-md-5 img {
+    max-height: 250px; /* reduce height on smaller screens */
+  }
 }
 
 /* Navbar */

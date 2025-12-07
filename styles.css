@@ -18,71 +18,69 @@ img {
   }
 }
 
-/* ---------------------------
-   SAFE: NAVY / WHITE / GREY
-   Applied last so it only changes colors
-   --------------------------- */
-
+/* ========= COLORS ========= */
 :root {
-  --navy: #0a1a33;         /* deep navy */
-  --navy-2: #123a63;       /* lighter navy accent */
-  --page-bg: #f2f2f5;      /* very light grey page background */
-  --panel-bg: #ffffff;     /* white for cards / main panels */
-  --text: #222222;         /* primary text (dark grey) */
-  --muted: #6b6b6b;        /* secondary text */
-  --muted-2: #9aa0a6;      /* even lighter grey for subtle text */
+  --navy: #0a1a33;
+  --navy-light: #123a63;
+  --grey-light: #f2f2f5;
+  --white: #ffffff;
+  --text-dark: #2a2a2a;
+  --text-grey: #6b6b6b;
 }
 
-/* page background and base text color only */
-html, body {
-  background-color: var(--page-bg) !important;
-  color: var(--text) !important;
+/* ========= BODY & PAGE ========= */
+body {
+  background-color: var(--grey-light);
+  color: var(--text-dark);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-/* top nav / header: only change color & link color */
-header, nav {
-  background-color: var(--navy) !important;
-  color: #ffffff !important;
-}
-header a, nav a, .nav a {
-  color: #ffffff !important;
-}
-header a:hover, nav a:hover, .nav a:hover {
-  color: var(--navy-2) !important;
-}
-
-/* headings color - keep sizes/weights unchanged */
+/* ========= HEADINGS ========= */
 h1, h2, h3, h4 {
-  color: var(--navy) !important;
+  color: var(--navy);
+  margin-top: 0;
 }
 
-/* paragraphs and smaller text */
-p, li, span {
-  color: var(--text) !important;
-}
-
-/* links elsewhere */
+/* ========= LINKS ========= */
 a {
-  color: var(--navy-2) !important;
+  color: var(--navy-light);
+  text-decoration: none;
 }
 a:hover {
-  color: var(--navy) !important;
+  color: var(--navy);
 }
 
-/* keep content panels / features white for contrast; don't alter spacing */
-.main, main, .content, .container, .feature, .card, section {
-  background-color: var(--panel-bg) !important;
-  color: var(--text) !important;
+/* ========= CONTAINERS / SECTIONS ========= */
+.section, .feature, .card, main {
+  background-color: var(--white);
+  color: var(--text-dark);
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 900px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* subtle footer treatment (color only) */
+/* ========= NAVBAR ========= */
+nav, .navbar {
+  background-color: var(--navy);
+  color: var(--white);
+  padding: 1rem;
+}
+nav a, .navbar a {
+  color: white;
+  margin-right: 1rem;
+}
+nav a:hover, .navbar a:hover {
+  color: var(--navy-light);
+}
+
+/* ========= FOOTER ========= */
 footer {
-  background-color: var(--navy) !important;
-  color: #ffffff !important;
-}
-
-/* images - ensure they remain unstyled (no borders or backgrounds) */
-img {
-  background: none !important;
-  border: 0 !important;
+  background-color: var(--navy);
+  color: white;
+  text-align: center;
+  padding: 1rem;
 }

@@ -130,39 +130,39 @@ HEADER / NAVBAR
   ▸ Logo + DNA icon (left)
   ▸ Nav links (Home / About / Contact)
 
-HERO SECTION (py-5, bg-light)
+HERO SECTION 
   ROW
-    LEFT COLUMN (col-md-7)
+    LEFT COLUMN 
       ▸ H1: "Welcome to Gene's Drives"
       ▸ Lead paragraph: intro to gene drives
       ▸ Button: "See more" (links to #features)
-    RIGHT COLUMN (col-md-5)
-      ▸ Hero image: IMG-20251207-WA0004.jpg (max-height 400px)
+    RIGHT COLUMN 
+      ▸ Hero image
 
-MAIN CONTENT (#features)
-  SECTION 1 (row mb-5)
-    LEFT COLUMN (col-md-6)
+MAIN CONTENT 
+  SECTION 1 
+    LEFT COLUMN 
       ▸ Image
-    RIGHT COLUMN (col-md-6)
+    RIGHT COLUMN 
       ▸ H3: "How Gene Drives Work"
       ▸ Paragraph: "Turning inheritance on its head"
       ▸ UL: 3 bullet points explaining gene drive inheritance
 
-  SECTION 2 (row mb-5, image/text reversed)
-    LEFT COLUMN (col-md-6 order-md-2)
+  SECTION 2 
+    LEFT COLUMN 
       ▸ Image
-    RIGHT COLUMN (col-md-6 order-md-1)
+    RIGHT COLUMN 
       ▸ H3: "Why It Matters for Medicine & Public Health"
       ▸ Paragraph explaining vector-borne disease control
 
-  SECTION 3 (row mb-5)
-    LEFT COLUMN (col-md-6)
+  SECTION 3 
+    LEFT COLUMN 
       ▸ Image
-    RIGHT COLUMN (col-md-6)
+    RIGHT COLUMN
       ▸ H3: "A New Frontier"
       ▸ Paragraph: concluding invitation to explore About page
 
-FOOTER (bg-dark text-white py-4)
+FOOTER
   ▸ Small: © 2025 Gene's Drives
 
 About:

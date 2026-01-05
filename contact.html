@@ -96,14 +96,14 @@
         }
 
         const action = form.getAttribute('action') || '';
-        // If user didn't set up a real Formspree endpoint, prevent navigation and show a success message.
+        
         if (action.includes('{your-id}') || action.trim() === '') {
           event.preventDefault();
           showAlert('Thanks! Your submission would be sent (form endpoint not configured).', 'success');
           form.reset();
           form.classList.remove('was-validated');
         }
-        // Otherwise let the browser submit the form to the configured endpoint.
+    
       });
     })();
   </script>

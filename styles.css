@@ -1,4 +1,4 @@
-/* Basic styling for Gene's Drives front page */
+
 body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans";
   color: #222;
@@ -18,20 +18,20 @@ img {
   }
 }
 
-/* HERO IMAGE FIX FOR BOOTSTRAP GRID - FORCE SIZE */
+
 header .col-md-5 img {
-  max-height: 400px !important;   /* limit vertical size */
-  min-height: 200px !important;   /* optional: prevent it from shrinking too much */
-  width: auto !important;         /* preserve aspect ratio */
-  max-width: 100% !important;     /* stay inside column */
-  height: auto !important;        /* ensure responsive scaling */
-  object-fit: cover !important;   /* scale and crop to fill container */
+  max-height: 400px !important; 
+  min-height: 200px !important;  
+  width: auto !important;        
+  max-width: 100% !important;  
+  height: auto !important;      
+  object-fit: cover !important;   
   border-radius: 10px !important; 
   display: block !important;
-  margin: 0 auto !important;      /* center inside column */
+  margin: 0 auto !important;   
 }
 
-/* Navbar */
+
 .navbar, .navbar-light, .navbar-dark {
   background-color: #123a63 !important;
   color: #ffffff !important;
@@ -44,13 +44,13 @@ header .col-md-5 img {
   color: #123a63 !important;
 }
 
-/* Cards */
+
 .card {
   background-color: #ffffff !important;
   color: #2a2a2a !important;
 }
 
-/* Buttons */
+
 .btn-primary {
   background-color: #123a63 !important;
   border-color: #123a63 !important;
@@ -61,18 +61,18 @@ header .col-md-5 img {
   border-color: #0a1a33 !important;
 }
 
-/* Body */
+
 body {
   background-color: #f2f2f5 !important;
   color: #2a2a2a !important;
 }
 
-/* Ensure all content images preserve aspect ratio */
+
 .content img, .about img, img {
-  max-width: 100%;       /* never exceed container width */
-  height: auto;          /* preserve aspect ratio */
+  max-width: 100%;       
+  height: auto;        
   display: block;
-  margin: 0 auto;        /* center the image */
-  object-fit: contain;   /* fit inside container without cropping */
-  border-radius: 10px;   /* optional, match your header style */
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08); /* optional, match existing style */
+  margin: 0 auto;        
+  object-fit: contain;  
+  border-radius: 10px; 
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08); 
